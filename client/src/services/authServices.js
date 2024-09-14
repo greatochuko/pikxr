@@ -1,4 +1,4 @@
-export const BASE_URL = "https://pikxr-server.onrender.com";
+export const BASE_URL = import.meta.env.BASE_URL;
 // export const BASE_URL = "http://localhost:5000";
 
 export async function login(email, password) {
@@ -39,8 +39,7 @@ export async function signup(username, fullname, email, password) {
     const data = await res.json();
     if (!data.error) localStorage.setItem("token", data.token);
     return data;
-  } catch (err) {
-  }
+  } catch (err) {}
 }
 
 export async function validateEmail(email, signal) {
