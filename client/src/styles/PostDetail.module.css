@@ -1,0 +1,112 @@
+.postDetail {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  border-bottom: solid 1px #eee;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.header button {
+  color: #666;
+  background-color: transparent;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.header button:hover {
+  color: #000;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.post .images {
+  overflow: hidden;
+  flex: 1;
+  border-radius: 6px;
+  width: 100%;
+  aspect-ratio: 1.8;
+}
+
+.post .images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.caption a {
+  color: var(--BLUE-100);
+  font-size: 0.9rem;
+}
+
+.caption a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.actions button {
+  flex: 1;
+  padding: 8px 1rem;
+  border-radius: 8px;
+  border: solid 1px #ddd;
+  white-space: nowrap;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.actions button:last-child {
+  flex: 0;
+}
+
+.actions button.active {
+  background-color: var(--BLUE-200);
+  border-color: var(--BLUE-200);
+  color: #fff;
+}
+
+.actions button.active:hover {
+  background-color: var(--BLUE-100);
+  border-color: var(--BLUE-100);
+  color: #fff;
+}
+
+.actions button:hover {
+  background-color: #e5e5e5;
+}
+
+.actions button i {
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .actions button {
+    padding: 8px;
+  }
+  .postDetail {
+    padding: 10px;
+  }
+}

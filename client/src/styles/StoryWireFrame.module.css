@@ -1,0 +1,19 @@
+.story {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #eee;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}

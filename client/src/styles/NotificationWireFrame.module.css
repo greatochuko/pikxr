@@ -1,0 +1,24 @@
+.notification {
+  box-shadow: 0 2px 2px #ddd;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  color: #555;
+  border-left: solid 2px gray;
+  border-radius: 5px;
+  height: 60px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}

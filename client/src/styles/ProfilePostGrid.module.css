@@ -1,0 +1,16 @@
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.noPosts {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  grid-column: span 2;
+  color: #555;
+  font-weight: 600;
+}

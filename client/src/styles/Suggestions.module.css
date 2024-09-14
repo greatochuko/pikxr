@@ -1,0 +1,27 @@
+.suggestions {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #444;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.suggestions > h3 {
+  font-size: 1rem;
+}
+
+.suggestions > button {
+  font-size: 0.9rem;
+  color: var(--BLUE-100);
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+}
+
+.suggestions ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+}

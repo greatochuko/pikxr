@@ -1,0 +1,48 @@
+.suggestion {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.suggestion img {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.suggestion > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion > div h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.suggestion > div p {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.suggestion button {
+  background-color: #fff;
+  border-radius: 9999px;
+  padding: 7px 1rem;
+  border: solid 1px var(--BLUE-100);
+  color: var(--BLUE-100);
+  margin-left: auto;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.suggestion button:hover {
+  border-color: var(--BLUE-100);
+  background-color: var(--BLUE-100);
+  color: #fff;
+}
+
+.suggestion button:active {
+  scale: 0.95;
+}

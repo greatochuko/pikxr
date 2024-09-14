@@ -1,0 +1,49 @@
+.stories {
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header h3 {
+  color: #555;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.header button {
+  font-size: 0.8rem;
+  color: #aaa;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  transition: color 0.15s;
+}
+
+.header button:hover {
+  color: #333;
+}
+
+.storiesList {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 2rem;
+  width: fit-content;
+}
+
+.storiesList::-webkit-scrollbar {
+  display: none;
+}

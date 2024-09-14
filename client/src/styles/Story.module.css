@@ -1,0 +1,74 @@
+.story {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  position: relative;
+  padding: 2px;
+  border: solid 2px blue;
+  cursor: pointer;
+}
+
+.story.watch {
+  border-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story.watch i {
+  color: #444;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: scale 0.3s;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.story:hover img {
+  scale: 1.05;
+}
+
+.story .username {
+  position: absolute;
+  bottom: -1.5rem;
+  font-weight: 600;
+  font-size: 13px;
+  transform: translateX(-50%);
+  left: 50%;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* ADD STORY */
+
+.story.addStory {
+  border-color: #bbb;
+  position: relative;
+}
+
+.addStory button {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+
+.addStory i {
+  color: var(--BLUE-200);
+  width: 20px;
+  font-size: 1.5rem;
+  padding: 1px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+}

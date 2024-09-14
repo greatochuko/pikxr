@@ -1,0 +1,50 @@
+.sidebar {
+  min-width: max(200px, 18%);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  border-right: solid 1px #eee;
+}
+
+.sideNav {
+  flex: 1;
+  display: flex;
+  margin: 10px 0;
+}
+
+.sideNav ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sideNav ul li a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  padding-left: 2rem;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+  font-weight: 400;
+}
+
+.sideNav ul li a:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.sideNav ul li a.active {
+  color: var(--BLUE-200);
+  opacity: 1;
+  font-weight: bold;
+}
+
+.sideNav ul li a i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.sideNav .settings {
+  margin-top: auto;
+}

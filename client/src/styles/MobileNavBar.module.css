@@ -1,0 +1,48 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  align-items: center;
+  z-index: 150;
+  background-color: white;
+  border-top: solid 1px #eee;
+  box-shadow: 0 -2px 2px #eee;
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.navbar li a {
+  color: gray;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.navbar :is(li, li.active) a:hover {
+  color: var(--BLUE-200);
+}
+
+.navbar li.active a {
+  color: var(--BLUE-200);
+}
+
+.navbar li.logout a:hover {
+  color: brown;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+}

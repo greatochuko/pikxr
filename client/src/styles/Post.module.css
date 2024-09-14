@@ -1,0 +1,97 @@
+.post {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.post:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+
+.caption a:hover {
+  text-decoration: underline;
+}
+
+.post .images {
+  overflow: hidden;
+  flex: 1;
+  border-radius: 6px;
+  width: 100%;
+  aspect-ratio: 1.8;
+}
+
+.post .images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.caption span {
+  color: var(--BLUE-100);
+  font-size: 0.9rem;
+}
+
+.caption:hover span {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.actions button {
+  flex: 1;
+  padding: 8px 1rem;
+  border-radius: 8px;
+  border: solid 1px #ddd;
+  white-space: nowrap;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.actions button:last-child {
+  flex: 0;
+}
+
+.actions button.active {
+  background-color: var(--BLUE-200);
+  border-color: var(--BLUE-200);
+  color: #fff;
+}
+
+.actions :is(button, a):active {
+  scale: 0.95;
+}
+
+.actions a {
+  flex: 1;
+}
+
+.actions button.active:hover {
+  background-color: var(--BLUE-100);
+  border-color: var(--BLUE-100);
+  color: #fff;
+}
+
+.actions button:hover {
+  background-color: #e5e5e5;
+}
+
+.actions button i {
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .actions button {
+    padding: 8px;
+  }
+}

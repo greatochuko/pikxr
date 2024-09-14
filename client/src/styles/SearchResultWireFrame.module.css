@@ -1,0 +1,44 @@
+.result {
+  display: flex;
+  gap: 10px;
+  margin: 10px 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #eee;
+  animation: pulse 1s infinite;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.details > div {
+  flex: 1;
+  border-radius: 9999px;
+  background-color: #eee;
+  width: 60%;
+  animation: pulse 1s infinite;
+}
+
+.details :first-child {
+  width: 70%;
+}

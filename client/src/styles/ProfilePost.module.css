@@ -1,0 +1,45 @@
+.post {
+  border-radius: 5px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/5;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.post:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .postStats {
+  display: flex;
+  gap: 2rem;
+}
+
+.overlay .postStats p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.overlay .postStats p i {
+  margin-right: 8px;
+}

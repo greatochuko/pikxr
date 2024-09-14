@@ -1,0 +1,196 @@
+.profile {
+  padding-top: 55px;
+  padding-bottom: 2rem;
+}
+
+.profileImages {
+  height: min(50vh, 300px);
+  position: relative;
+}
+
+.profileImages .coverPhoto {
+  width: 100%;
+  height: 100%;
+}
+
+.profileImages .coverPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileImages .profileImage {
+  width: 16vh;
+  height: 16vh;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -8vh;
+  left: 150px;
+  overflow: hidden;
+}
+
+.profileImages .profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileImages label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+}
+
+.profileImages label:hover {
+  opacity: 1;
+}
+
+.profileImages input {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* USER INFO */
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(500px, 80%);
+  padding: 0 60px;
+  margin-top: 8vh;
+}
+
+.userInfo form {
+  width: 100%;
+  display: flex;
+}
+
+.userInfo form input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: solid 1px #ddd;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.username {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.email {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.userStats {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.userStats li {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s;
+  width: 80px;
+}
+
+.userStats li:first-child {
+  cursor: default;
+}
+
+.userStats li:first-child:hover {
+  color: gray;
+}
+
+.userStats li:hover {
+  color: #333;
+}
+
+.userStats li span {
+  font-weight: bold;
+  color: #333;
+}
+
+.userInfo .about {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.userInfo .about i {
+  margin-left: 10px;
+}
+
+.posts {
+  width: min(1000px, 90%);
+}
+
+.header {
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header ul li {
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 15px;
+  transition: 0.3s;
+  font-weight: 600;
+  border-bottom: solid 2px transparent;
+}
+
+.header ul li.active {
+  font-weight: bold;
+  color: #333;
+  border-bottom-color: #333;
+}
+
+.profileImages .profileImage {
+  left: 50%;
+  transform: translateX(-50%);
+}

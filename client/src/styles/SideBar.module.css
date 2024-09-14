@@ -1,0 +1,96 @@
+.sideBar {
+  height: fit-content;
+  flex: 1;
+  height: calc(100vh - 4rem);
+  position: sticky;
+  top: 4rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+}
+
+.userInfo {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  align-items: center;
+}
+
+.userImage {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.userImage .coverPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userImage .profilePhoto {
+  width: 65px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.userInfo .fullname {
+  font-size: 1rem;
+}
+
+.userInfo .username {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.userInfo .about {
+  font-size: 0.9rem;
+  max-width: 50%;
+  text-align: center;
+}
+
+.userStats {
+  display: flex;
+  width: 100%;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.userStats > div {
+  font-size: 0.9rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userStats > div span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.userStats > div:first-child {
+  border-right: solid 1px #ddd;
+}
+
+.userInfo a {
+  padding: 1rem;
+  color: var(--BLUE-100);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .sideBar {
+    display: none;
+  }
+}

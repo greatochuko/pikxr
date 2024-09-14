@@ -1,0 +1,132 @@
+.modal {
+  width: 450px;
+  height: max(500px, 50vh);
+  width: max(35vw, 600px);
+  height: min(90vh, 800px);
+  background-color: white;
+  animation: show 0.3s forwards;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@keyframes show {
+  0% {
+  }
+  100% {
+    transform: scale(0.96);
+  }
+}
+
+button.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: solid 1px #ddd;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imgPreview {
+  flex: 2;
+  display: flex;
+  position: relative;
+}
+
+.imgPreview img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal form input[type="file"] {
+  display: none;
+}
+
+.modal form label {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: solid 1px #ddd;
+  transition: background-color 0.15s;
+  z-index: 1;
+}
+
+.modal form label:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal form label p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.modal form label p i {
+  font-size: 2rem;
+}
+
+.modal form textarea {
+  height: 100px;
+  margin: 0 10px;
+  padding: 10px;
+  outline: none;
+  border: solid 1px #aaa;
+  border-radius: 10px;
+  resize: none;
+  flex: 1;
+}
+
+.modal form button {
+  padding: 10px;
+  background-color: var(--BLACK-200);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.modal form input[type="submit"]:hover {
+  background-color: var(--BLACK-100);
+}
+
+/* USER */
+.user {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}

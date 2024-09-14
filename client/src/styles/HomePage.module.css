@@ -1,0 +1,32 @@
+.homepage {
+  padding: 4rem 2rem 0;
+  display: flex;
+  gap: 1rem;
+  background-color: #f3f3f3;
+}
+
+.main {
+  flex: 2;
+  width: 100%;
+  /* max-width: 600px; */
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 992px) {
+  .homepage {
+    padding: 4rem 12vw 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    padding: 4rem 5vw 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepage {
+    padding: 4rem 3vw 3rem;
+  }
+}

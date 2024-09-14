@@ -1,0 +1,54 @@
+.feed {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header h3 {
+  color: var(--BLACK-200);
+}
+
+.sortBy {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.sortBy p {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.sortBy p.active {
+  color: #000;
+}
+
+/* POSTS */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* EMPTY FEED */
+
+.empty {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .posts {
+    gap: 1rem;
+  }
+}

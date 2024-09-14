@@ -1,0 +1,25 @@
+.postDetailPage {
+  padding: 4rem 2rem 0;
+  display: flex;
+  gap: 1rem;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+  .postDetailPage {
+    padding: 4rem 12vw 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .postDetailPage {
+    padding: 4rem 5vw 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .postDetailPage {
+    padding: 4rem 1vw 3rem;
+  }
+}

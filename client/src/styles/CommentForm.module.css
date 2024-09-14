@@ -1,0 +1,43 @@
+.commentForm {
+  display: flex;
+  position: relative;
+}
+
+.commentForm input {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 9999px;
+  border: solid 1px #ddd;
+  padding-left: 3.5rem;
+  padding-right: 6rem;
+  outline: none;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+}
+
+.commentForm img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  height: 46px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.commentForm button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: calc(1rem - 4px) 1.5rem;
+  font-size: 1rem;
+  border-radius: 9999px;
+  border: none;
+  background-color: var(--BLUE-200);
+  color: #fff;
+  transition: all 0.15s;
+}
+
+.commentForm button:hover {
+  background-color: var(--BLUE-100);
+}

@@ -1,0 +1,122 @@
+.auth {
+  width: min(80%, 500px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  color: #333;
+}
+
+.authContainer {
+  flex: 1;
+  border: solid 1px #ccc;
+  /* height: 80%; */
+  padding: 1.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px #ccc;
+}
+
+.auth form input:focus {
+  border-color: gray;
+}
+
+.auth form button {
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(0, 125, 255);
+  color: #fff;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.auth form button.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.auth form button.disabled:hover {
+  background-color: gray;
+}
+
+.auth form button:hover {
+  background-color: rgb(0, 103, 212);
+}
+
+.error {
+  color: #d2042d;
+  font-size: 0.9rem;
+}
+
+.signup {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.signup a {
+  color: rgb(0, 153, 255);
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.break {
+  text-align: center;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.oauth {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+}
+
+.oauth a {
+  padding: 10px;
+}
+
+.oauth:hover {
+  color: rgb(0, 125, 255);
+}
+
+.inputField {
+  position: relative;
+}
+
+.oauth button {
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(0, 125, 255);
+  color: #fff;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.oauth button:hover {
+  background-color: rgb(0, 103, 212);
+}

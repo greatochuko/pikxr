@@ -1,0 +1,46 @@
+.follower a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.follower a:hover {
+  background-color: #eee;
+}
+
+.follower img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.follower .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.follower .info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.follower .info p:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.follower button {
+  margin-left: auto;
+  font-size: 0.9rem;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  background-color: #eee;
+  transition: background-color 0.15s;
+}
+
+.follower button:hover {
+  background-color: #ddd;
+}
