@@ -43,6 +43,10 @@ app.use(commentRouter);
 app.use(storyRouter);
 app.use(notificationRouter);
 
+app.get("/", (req, res) => {
+  res.sendStatus(200);
+});
+
 mongoose.connect(MONGODB_URI).then(
   app.listen(PORT, () => {
     console.log(`Server running at port ${PORT}`);
